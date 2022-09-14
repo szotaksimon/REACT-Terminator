@@ -1,12 +1,12 @@
 import React from "react";
 
-const Terminator = () => {
+const Terminator = ({ id, name, serialNumber }) => {
   return (
-    <div className='bg-light-blue dib br3 pa3 ma2 grow'>
-      <img src="https://robohash.org/t/t?size=180x180" alt="terminátor" />
+    <div className='tc bg-light-blue dib br3 pa3 ma2 grow'>
+      <img src={`https://robohash.org/${id}?size=180x180`} alt="terminátor" />
       <div>
-        <h2>T800</h2>
-        <p>SN: 32673567</p>
+        <h2>{name}</h2>
+        <p>{serialNumber}</p>
       </div>
     </div>
   );
