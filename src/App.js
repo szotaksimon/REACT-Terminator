@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TerminatorList from './components/terminator-list/terminator-list.component';
 import { models } from './models.js';
 import SearchBox from './components/searchbox/searchbox.component';
+import './App.css';
 
 class App extends Component {
     constructor() {
@@ -22,7 +23,7 @@ class App extends Component {
         })
         return (
             <div className="tc">
-                <h1>Terminator modellek</h1>
+                <h1 id="header-text">Terminator modellek</h1>
                 <SearchBox searchChange={this.onSearchChange} />
                 <TerminatorList models={filteredModels} />
             </div>
